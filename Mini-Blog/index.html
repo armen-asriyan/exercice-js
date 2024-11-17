@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Lien vers Bootstrap CSS : Slate -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Lien vers Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Accueil | Accueil</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-primary fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid p-0" autofocus>
+        <a class="navbar-brand nav-link text-white" href="../index.html"
+          >HandyBlog</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./templates/commentaires.html"
+                >Commentaires</a
+              >
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="navbar-auth-buttons">
+            <li class="nav-item" id="navbar-sign-in-button">
+              <a href="./templates/login.html" class="nav-link"
+                ><span class="bi bi-box-arrow-in-right"></span> Se connecter</a
+              >
+            </li>
+
+            <li
+              class="nav-item"
+              id="navbar-account-button"
+              style="display: none"
+            >
+              <a href="./templates/profil.html" class="nav-link"
+                ><span class="bi bi-person-circle"></span> Profil</a
+              >
+            </li>
+            <li
+              class="nav-item"
+              id="navbar-sign-out-button"
+              style="display: none"
+            >
+              <a href="#" class="nav-link"
+                ><span class="bi bi-box-arrow-right"></span> Se déconnecter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <div
+        class="hero-section p-1 text-center bg-image d-flex flex-column justify-content-center align-items-center"
+      >
+        <div
+          class="mask rounded-4 m-1"
+          style="background-color: rgba(0, 0, 0, 0.6)"
+        >
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white p-3">
+              <h1 class="mb-3">HandyBlog</h1>
+              <h2 class="mb-3 text-justify fs-6">
+                <em>
+                  Le blog dédié à l’inclusion et à l’autonomie des personnes en
+                  situation de <strong class="text-danger">handicap</strong>.
+                </em>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mask rounded-4 m1 col-lg-6"
+          style="background-color: rgba(0, 0, 0, 0.6)"
+        >
+          <div class="justify-content-center align-items-center h-100">
+            <div class="text-white p-3">
+              <p>
+                Que vous soyez à la recherche de conseils pratiques,
+                d'actualités sur l'accessibilité, ou de témoignages inspirants,
+                HandyBlog est là pour vous accompagner. Explorez nos articles,
+                découvrez des outils et ressources, et rejoignez une communauté
+                engagée dans l’accessibilité pour tous.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr m-4 opacity-75 m-xxl-5" />
+
+      <!-- Les articles -->
+
+      <div class="container">
+        <div class="row">
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-1.webp"
+                class="card-img-top"
+                alt="Illustration d'une femme avec des lunettes, arborant un badge, exprimant une attitude positive."
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-2.webp"
+                class="card-img-top"
+                alt="Illustration d'une personne malvoyante tenant une canne blanche"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-3.webp"
+                class="card-img-top"
+                alt="Illustration d'une femme malvoyante tenant une canne blanche et portant des lunettes"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-4.webp"
+                class="card-img-top"
+                alt="Illustration d'une femme atteinte de nanisme"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-5.webp"
+                class="card-img-top"
+                alt="Illustration d'un homme atteinte de nanisme"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-6.webp"
+                class="card-img-top"
+                alt="Illustration d'un homme portant une prothèse de jambe"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-7.webp"
+                class="card-img-top"
+                alt="Illustration d'un homme malvoyant avec son chien d'assistance"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-8.webp"
+                class="card-img-top"
+                alt="Illustration d'un homme en fauteuil roulant portant une chemise blanche"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-9.webp"
+                class="card-img-top"
+                alt="Illustration d'un homme en fauteuil roulant portant une chemise verte"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                src="./assets/img/article-10.webp"
+                class="card-img-top"
+                alt="Illustration d'une femme en fauteuil roulant électrique"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Lorem Ipsum</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  explicabo corporis aliquid sint. Quasi beatae nesciunt quae
+                  molestias tenetur recusandae laudantium soluta amet quibusdam
+                  explicabo. Omnis eveniet eum laboriosam fugit.
+                </p>
+                <a href="#" class="btn btn-primary">En savoir plus</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="bg-primary text-center text-lg-start w-100">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2024 Copyright:
+        <a
+          class="nav-link d-inline-block"
+          href="https://github.com/armen-asriyan/"
+          >Armen ASRIYAN</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Lien vers Bootstrap JavaScript Bundle -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/accueil.js"></script>
+  </body>
+</html>

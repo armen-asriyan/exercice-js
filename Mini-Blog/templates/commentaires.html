@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Lien vers Bootstrap CSS : Slate -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <!-- Lien vers Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+
+    <title>Laissez vos commentaires | HandyBlog</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav
+      class="navbar navbar-expand-lg bg-primary fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid p-0">
+        <a class="navbar-brand nav-link text-white" href="../index.html"
+          >HandyBlog</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Accueil </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../templates/commentaires.html"
+                >Commentaires</a
+              >
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="navbar-auth-buttons">
+            <li class="nav-item" id="navbar-sign-in-button">
+              <a href="../templates/login.html" class="nav-link"
+                ><span class="bi bi-box-arrow-in-right"></span> Se connecter</a
+              >
+            </li>
+
+            <li
+              class="nav-item"
+              id="navbar-account-button"
+              style="display: none"
+            >
+              <a href="../templates/profil.html" class="nav-link"
+                ><span class="bi bi-person-circle"></span> Profil</a
+              >
+            </li>
+            <li
+              class="nav-item"
+              id="navbar-sign-out-button"
+              style="display: none"
+            >
+              <a href="#" class="nav-link"
+                ><span class="bi bi-box-arrow-right"></span> Se déconnecter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container mb-5" style="margin-top: 100px">
+        <div class="row d-flex justify-content-center">
+          <div class="container vw-100">
+            <!-- La carte de commentaire -->
+            <div class="card">
+              <!-- Le corps de la carte de commentaire -->
+              <div id="comments-container">
+                <div class="card-body border-bottom border-dark-subtle">
+                  <!-- Photo de profil du commentateur -->
+                  <div class="d-flex flex-start align-items-center">
+                    <i
+                      class="bi bi-person-circle text-white commenter-picture"
+                    ></i>
+                    <!-- Nom du commentateur -->
+                    <div>
+                      <h6 class="fw-bold text-white mb-1">John Doe</h6>
+                      <!-- Date de publication du commentaire -->
+                      <p class="small mb-0">
+                        Publié le : <em class="comment-date">nov. 2024</em>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Le commentaire -->
+                  <p class="p-4 card-text">cool site &#128077;</p>
+                </div>
+
+                <div class="card-body">
+                  <!-- Photo de profil du commentateur -->
+                  <div class="d-flex flex-start align-items-center">
+                    <i
+                      class="bi bi-person-circle text-white commenter-picture"
+                    ></i>
+                    <!-- Nom du commentateur -->
+                    <div>
+                      <h6 class="fw-bold text-white mb-1">Suleyman</h6>
+                      <!-- Date de publication du commentaire -->
+                      <p class="small mb-0">
+                        Publié le : <em class="comment-date">oct. 2024</em>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Le commentaire -->
+                  <p class="p-4 card-text">pas mal</p>
+                </div>
+              </div>
+
+              <!-- Pied de page de la carte de commentaire / formulaire  "poster un nouveau commentaire" -->
+
+              <div class="card-footer bg-primary-subtle py-3 border-0">
+                <div class="d-flex flex-start w-100">
+                  <i
+                    class="bi bi-person-circle text-white commenter-picture"
+                  ></i>
+
+                  <form
+                    class="form-outline w-100"
+                    onsubmit="postComment(event)"
+                  >
+                    <textarea
+                      class="form-control"
+                      id="newCommentTextArea"
+                      rows="4"
+                    ></textarea>
+                    <label
+                      class="form-label text-white"
+                      for="newCommentTextArea"
+                      >Message</label
+                    >
+                    <button
+                      type="submit"
+                      data-mdb-button-init
+                      data-mdb-ripple-init
+                      class="btn btn-primary w-100"
+                    >
+                      Publier le commentaire
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="bg-primary text-center text-lg-start w-100">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © 2024 Copyright:
+        <a
+          class="nav-link d-inline-block"
+          href="https://github.com/armen-asriyan/"
+          >Armen ASRIYAN</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Lien vers Bootstrap JavaScript Bundle -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/commentaires.js"></script>
+  </body>
+</html>
