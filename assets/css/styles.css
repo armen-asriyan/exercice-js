@@ -28,7 +28,7 @@ input:focus-visible {
 }
 
 .hero-section {
-  background-image: url("/assets/img/hero.webp");
+  background-image: url("../img/hero.webp");
   background-size: cover;
   background-position: 40% top;
   background-repeat: no-repeat;
