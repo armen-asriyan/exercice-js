@@ -1,0 +1,147 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.herobrine {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 5px 5px #fff;
+  border-color: #fff !important;
+  filter: brightness(1) !important;
+}
+
+.darken {
+  background: rgb(0 0 0 / 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}
+
+.rotate {
+  transform: rotateY(360deg);
+  transition: transform 0.5s ease-in;
+}
+
+.steve-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.steve-head {
+  background-color: #ab7d66;
+  border-top: 15px #2b1e0d solid;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.sideburns {
+  width: 100%;
+  height: 8px;
+  border-left: 8px #2b1e0d solid;
+  border-right: 8px #2b1e0d solid;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+}
+
+.steve-eyes {
+  display: inline-flex;
+  gap: 20px;
+  height: fit-content;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.eye {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.eye-left {
+  border-right: 8px #2421ad solid;
+}
+
+.eye-right {
+  border-left: 8px #2421ad solid;
+}
+
+.beard {
+  width: 20px;
+  height: 8px;
+  margin: 0 auto;
+  border-bottom: 8px #41210c solid;
+  border-right: 8px #41210c solid;
+  border-left: 8px #41210c solid;
+}
+
+.moustache {
+  width: 20px;
+  height: fit-content;
+  margin: 0 auto;
+  border-bottom: 8px #693f31 solid;
+  box-sizing: border-box;
+}
+
+.steve-torso {
+  display: flex;
+}
+
+.steve-arm {
+  background-color: #ab7d66;
+  border-top: 40px #00b0ae solid;
+  height: 70px;
+  width: 35px;
+}
+
+.steve-body {
+  background-color: #00b0ae;
+  width: 80px;
+  height: 110px;
+  border-bottom: 5px #494697 solid;
+  /* border-right: 20px #00b0ae solid; */
+}
+
+.steve-legs {
+  width: 100px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.steve-leg {
+  background-color: #494697;
+  width: 40px;
+  height: 100px;
+  border-bottom: 17px #6b6b6b solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.steve-leg--left {
+  border-right: 1px #3a318a solid;
+}
+
+.knee {
+  width: 22px;
+  height: 8px;
+  background-color: #3a318a;
+}
