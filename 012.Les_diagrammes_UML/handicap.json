@@ -1,0 +1,44 @@
+{
+  "handicaps": [
+    {
+      "id": 1,
+      "type": "Mobilité",
+      "description": "Les handicaps moteurs affectent la capacité d'une personne à se déplacer et à effectuer des actions physiques.",
+      "exemples": ["Paralysie", "Amputation", "Sclérose en plaques"]
+    },
+    {
+      "id": 2,
+      "type": "Auditif",
+      "description": "Les handicaps auditifs concernent les personnes ayant une perte partielle ou totale de l'audition.",
+      "exemples": ["Surdité", "Hypoacousie", "Acouphènes"]
+    },
+    {
+      "id": 3,
+      "type": "Visuel",
+      "description": "Les handicaps visuels incluent les troubles de la vue allant de la simple déficience visuelle à la cécité totale.",
+      "exemples": ["Cécité", "Malvoyance", "Glaucome"]
+    },
+    {
+      "id": 4,
+      "type": "Cognitif",
+      "description": "Les handicaps cognitifs touchent les capacités intellectuelles et d'apprentissage des individus.",
+      "exemples": ["Autisme", "Syndrome de Down", "Dyslexie"]
+    },
+    {
+      "id": 5,
+      "type": "Psychique",
+      "description": "Les handicaps psychiques concernent les troubles mentaux affectant la pensée, les émotions et le comportement.",
+      "exemples": ["Schizophrénie", "Dépression sévère", "Trouble bipolaire"]
+    },
+    {
+      "id": 6,
+      "type": "Neurologique",
+      "description": "Les handicaps neurologiques affectent le système nerveux, entraînant des troubles de la coordination, du mouvement et de la mémoire.",
+      "exemples": [
+        "Parkinson",
+        "Épilepsie",
+        "Accident vasculaire cérébral (AVC)"
+      ]
+    }
+  ]
+}
