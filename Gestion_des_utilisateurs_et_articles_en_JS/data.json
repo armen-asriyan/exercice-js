@@ -1,0 +1,11 @@
+{
+    "utilisateurs": [
+      { "id": 1, "nom": "Alice Dupont", "email": "alice@example.com" },
+      { "id": 2, "nom": "Bob Martin", "email": "bob@example.com" }
+    ],
+    "articles": [
+      { "id": 1, "titre": "Introduction à JavaScript", "contenu": "JavaScript est un langage puissant..." },
+      { "id": 2, "titre": "Les bases de Bootstrap", "contenu": "Bootstrap est une bibliothèque CSS..." }
+    ]
+  }
+  
