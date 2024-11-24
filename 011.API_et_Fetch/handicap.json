@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Handicap visuel",
+    "description": "Difficulté ou impossibilité de voir, nécessitant des aides spécifiques.",
+    "solutions": [
+      "Utilisation de lecteurs d'écran",
+      "Amélioration du contraste sur les interfaces",
+      "Emploi de polices agrandies"
+    ]
+  },
+  {
+    "type": "Handicap auditif",
+    "description": "Difficulté ou impossibilité d'entendre, nécessitant des adaptations pour la communication.",
+    "solutions": [
+      "Sous-titrage des vidéos",
+      "Langue des signes",
+      "Aides auditives comme les boucles magnétiques"
+    ]
+  },
+  {
+    "type": "Handicap moteur",
+    "description": "Difficulté à se mouvoir ou à utiliser certaines parties du corps.",
+    "solutions": [
+      "Rampes d'accès pour fauteuils roulants",
+      "Claviers adaptés",
+      "Aménagement des espaces de travail"
+    ]
+  },
+  {
+    "type": "Troubles cognitifs",
+    "description": "Difficultés à traiter l'information ou à interagir avec l'environnement.",
+    "solutions": [
+      "Instructions claires et simples",
+      "Temps supplémentaire pour accomplir des tâches",
+      "Interfaces utilisateur simplifiées"
+    ]
+  }
+]

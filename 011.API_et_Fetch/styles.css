@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #367d38;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul#liste-handicaps li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #e8f5e9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+ul#liste-handicaps li:hover {
+  background: #c8e6c9;
+}
+
+#details-handicap h2 {
+  color: #367d38;
+}
+
+#details-handicap ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+#details-handicap ul li {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+    margin: 10px;
+  }
+}
